@@ -6,7 +6,7 @@ from cogs.AutoMod import AutoMod
 
 
 
-bot = commands.Bot(command_prefix="!", help_command=None, intents=disnake.Intents.all(), test_guilds=[1100921385230028890])  #server id
+bot = commands.Bot(command_prefix="!", help_command=None, intents=disnake.Intents.all(), test_guilds=[])  #server id
 db = sqlite3.connect("amod.db")
 cursor = db.cursor()
 banned_words = ["Нигер","нига","нага","негр","черножопый","черномазый","фагот","пидр","пидор","пидорас","педик",
@@ -55,4 +55,4 @@ async def on_message(message):
 async def on_ready(self):
     print(f"Bot {self.bot.user} is ready to work!")
 
-bot.run("MTE2MjQzNDAzNTc4ODgyMDUwMQ.GwPup5.z2HmEEDOFZx2rtW_scr6D3o5QZIAhrwFDcGBvg")
+bot.run("")
